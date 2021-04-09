@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/mira/catkin_ws/install/setup.sh
