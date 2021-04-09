@@ -1,0 +1,8 @@
+prefix=/home/mira/ROV/rov_ws/install
+
+Name: map
+Description: Description of map
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs joy message_generation roscpp
