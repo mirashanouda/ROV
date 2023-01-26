@@ -1,0 +1,25 @@
+#:kivy 1.0
+
+FloatLayout:
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    MDFillRoundFlatButton:
+        text: "Button Test"
+        md_bg_color: 151/255, 0, 0, 1 #background
+        text_color: 1,1,1, 1
+        pos_hint: {"center_x": 0.5}
+        font_size: "30sp"
+        on_press: app.capture(*args)
+ 
+
+    Camera:
+        id: camera
+        index: 2
+        #resolution: (320, 240)
+        play: True
+        #pos_hint: {"center_x": .15, "center_y": .15}
